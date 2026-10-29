@@ -1,0 +1,20 @@
+# Mocktail configuration - tuned for smooth Roblox on Arch Linux.
+version: 1
+device: pc-windows-11
+
+graphics:
+  backend: direct-vulkan
+
+performance:
+  multithreaded_rendering: true
+  physics_worker_mode: throughput
+  gamemode: auto
+
+audio:
+  output_device: default
+  input_device: default
+
+window:
+  width: 1280
+  height: 720
+  title: Roblox

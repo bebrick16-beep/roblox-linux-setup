@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+set -euo pipefail
+exec flatpak run \
+  --env=SDL_AUDIODRIVER=pipewire \
+  --env=SDL_VIDEO_WAYLAND_ALLOW_LIBDECOR=0 \
+  --env=WEBKIT_DISABLE_SANDBOX_THIS_IS_DANGEROUS=1 \
+  --env=GTK_A11Y=none \
+  --env=NO_AT_BRIDGE=1 \
+  --env=XCURSOR_THEME=RobloxLegacy \
+  --env=XCURSOR_SIZE="${ROBLOX_CURSOR_SIZE:-24}" \
+  --env=XCURSOR_PATH="$HOME/.var/app/space.bigrat.mocktail/data/icons:/usr/share/icons" \
+  space.bigrat.mocktail "$@"
