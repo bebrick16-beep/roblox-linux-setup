@@ -36,7 +36,7 @@ sudo pacman -S flatpak python-pillow
 ## Установка
 
 ```bash
-git clone https://github.com/<ВАШ_НИК>/roblox-linux-setup.git
+git clone https://github.com/bebrick16-beep/roblox-linux-setup.git
 cd roblox-linux-setup
 chmod +x install.sh scripts/*.sh scripts/*.py
 ./install.sh
